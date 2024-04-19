@@ -1,15 +1,16 @@
 //---------------------------------------------fonts
 $font_path: '../fonts/';
-$font_1: 'RobotoCondensed', sans-serif;
+$font_1: 'RobotoBlack', sans-serif;
 $font_size_base: 1.6rem;
 //---------------------------------------------fonts###
 
 //---------------------------------------------colors
 $white: #fff;
 $black: #000;
+$accent_color: #017EE2;
 
 $color_text_base: $black;
-$color_link_base: #4aa3df;
+$color_link_base: $white;
 $body_bg: $white;
 //---------------------------------------------colors###
 
@@ -42,7 +43,7 @@ $point_8: 320px;
 //---------------------------------------------media points
 
 //---------------------------------------------forms
-$input_height: 4rem;
+$input_height: 8rem;
 $input_offset: 0 2rem;
 $input_font_size: $font_size_base;
 $input_border_color: #ccc;
