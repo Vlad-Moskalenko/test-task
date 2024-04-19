@@ -4,14 +4,43 @@
 	top: 0;
 	left: 0;
 
-	height: var(--height-header);
 	width: 100%;
+	height: var(--height-header);
+	padding: 0 6rem;
 
-	font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 1.1rem;
 
 	will-change: transform;
+	transition: transform .5s ease-in-out;
 
 	@include z-index(header);
 }
 
 //------------------------------------------------------------layout###
+
+.logo__link {
+	position: relative;
+	z-index: 10;
+
+	transition: transform 0.3s ease;
+
+	&:hover, &:focus {
+		transform: scale(1.1);
+	}
+}
+
+.logo__container {
+	display: block;
+	width: 25.3rem;
+	height: 4.3rem;
+
+	overflow: hidden;
+}
+
+.logo {
+	@include contain_img;
+}

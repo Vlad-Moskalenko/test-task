@@ -1,2 +1,11 @@
 mixin header
 	header.header
+		a.logo__link(href="/", aria-label="company logo")
+				+picture({
+					img: 'logo.png',
+					class: 'logo__container',
+					img_class: 'logo',
+					alt: 'RE-IMAGINING TB CARE',
+				})
+
+		include ../../blocks/nav-menu
