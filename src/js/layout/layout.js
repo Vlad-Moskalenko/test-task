@@ -4,6 +4,7 @@ import { onWindowResize } from 'utils';
 
 // ------------------  import components
 import { calcViewportHeight } from '../utils';
+import burgerMenu from '../components/burger-menu';
 // ------------------  import components###
 
 const layout = () => {
@@ -11,6 +12,7 @@ const layout = () => {
 		calcViewportHeight();
 	});
 	calcViewportHeight();
+	burgerMenu();
 };
 
 export default layout;

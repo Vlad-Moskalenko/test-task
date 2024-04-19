@@ -1,0 +1,53 @@
+-
+	const navItems = {
+		gl_class: 'nav',
+		items: [
+			{
+				title: 'about us',
+				url: '#about us'
+			},
+			{
+				title: 'knowledge hub',
+				url: '#knowledge-hub'
+			},
+			{
+				title: 'innovators directory',
+				url: '#innovators-directory'
+			},
+			{
+				title: 'application portal',
+				url: '#application-portal'
+			},
+			{
+				title: 'news & updates',
+				url: '#news-updates'
+			}
+		]
+	}
+
+-
+	const socialMedia = {
+		items: [
+			{
+				name_icon: 'instagram',
+				url: 'http://instagram.com'
+			},
+			{
+				name_icon: 'facebook',
+				url: 'http://facebook.com'
+			},
+			{
+				name_icon: 'twitter',
+				url: 'http://twitter.com'
+			}
+		]
+	};
+
+.nav__wrapper.js-nav__wrapper.hide-nav
+	nav
+		+menu(navItems)
+
+	address
+		+social(socialMedia)
+
+button.menu__btn.js-menu__btn(type="button", aria-label="navigation menu") Menu

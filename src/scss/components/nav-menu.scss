@@ -1,0 +1,122 @@
+//------------------------------------------------------------burger-btn
+.menu__btn {
+	position: relative;
+	z-index: 100;
+
+	font-size: 1.1rem;
+	font-weight: 900;
+	line-height: 1.44;
+	text-transform: uppercase;
+	color: $white;
+
+	border-top: 3px solid currentColor;
+	border-bottom: 3px solid currentColor;
+
+	transition: transform 0.3s ease;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		transform: scale(1.15);
+	}
+}
+
+//------------------------------------------------------------nav-menu
+.nav__wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	padding: 14rem 6rem 3rem;
+	width: 44.8rem;
+	height: 100vh;
+
+	font-size: 3rem;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: $white;
+
+	transform: translate(0);
+	background-color: $accent_color;
+
+	transition: transform 0.5s ease;
+}
+
+.nav__list {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	overflow: hidden;
+
+	&::after {
+		content: "";
+
+		margin: 3rem 0 6rem;
+
+		width: 100%;
+		height: 1px;
+
+		background-color: $white;
+		opacity: 0.2;
+	}
+}
+
+.nav__link {
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: currentColor;
+		transform: translate(-102%);
+		transition: transform .3s ease;
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+
+		&::after {
+			transform: translate(0);
+		}
+	}
+}
+
+//------------------------------------------------------------hide-nav
+.hide-nav {
+	transform: translate(100%);
+}
+
+.hide-nav+.menu__btn {
+	color: $accent_color;
+}
+
+//------------------------------------------------------------social-media
+.social_list {
+	display: flex;
+	gap: 2rem;
+}
+
+.social_item {
+	transition: transform 0.3s ease;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		transform: scale(1.5);
+	}
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
